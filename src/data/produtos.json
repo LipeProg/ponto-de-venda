@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "codigo": "PROD001",
+    "nome": "Café 500g",
+    "preco": 18.9,
+    "estoque": 25,
+    "ativo": true
+  },
+  {
+    "id": 2,
+    "codigo": "PROD002",
+    "nome": "Açúcar 1kg",
+    "preco": 6.5,
+    "estoque": 12,
+    "ativo": true
+  },
+  {
+    "id": 3,
+    "codigo": "PROD003",
+    "nome": "Leite 1L",
+    "preco": 5.99,
+    "estoque": 4,
+    "ativo": true
+  },
+  {
+    "id": 4,
+    "codigo": "PROD004",
+    "nome": "Arroz 1kg",
+    "preco": 7.8,
+    "estoque": 0,
+    "ativo": true
+  },
+  {
+    "id": 5,
+    "codigo": "PROD005",
+    "nome": "Biscoito",
+    "preco": 4.25,
+    "estoque": 30,
+    "ativo": true
+  }
+]
