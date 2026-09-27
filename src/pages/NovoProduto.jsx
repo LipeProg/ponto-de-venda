@@ -5,21 +5,46 @@ function NovoProduto() {
   const [codigo, setCodigo] = useState("");
   const [preco, setPreco] = useState("");
   const [estoque, setEstoque] = useState("");
+  const [erro, setErro] = useState("");
 
   function enviar(acao) {
     acao.preventDefault();
 
-    console.log({
-      nome,
-      codigo,
-      preco,
-      estoque,
-    });
+  if (nome.trim() === "") {
+    setErro("O nome do produto é obrigatório.");
+    return;
   }
+
+  if (codigo.trim() === "") {
+    setErro("O código do produto é obrigatório.");
+    return;
+  }
+
+  if (Number(preco) <= 0) {
+    setErro("O preço deve ser maior que zero.");
+    return;
+  }
+
+  if (Number(estoque) < 0) {
+    setErro("O estoque não pode ser negativo.");
+    return;
+  }
+
+  setErro("");
+
+  console.log({
+    nome,
+    codigo,
+    preco,
+    estoque,
+  });
+}
 
   return (
     <div>
       <h1>Novo Produto</h1>
+
+      {erro && <p>{erro}</p>}
 
       <form onSubmit={enviar}>
         <div>
