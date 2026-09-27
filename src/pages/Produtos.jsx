@@ -1,5 +1,5 @@
 import produtos from '../data/produtos.json';
-
+import ProdutoItem from '../components/ProdutoItem';
 
 
 function Produtos() {
@@ -8,9 +8,10 @@ function Produtos() {
             <h1>Produtos</h1>
             <ul>
                 {produtos.map((produto)=> (
-                    <li key={produto.id}>
-                        {produto.nome} - R$ {produto.preco} - Estoque: {produto.estoque}
-                    </li>
+                   <ProdutoItem 
+                     key={produto.id} 
+                     produto={produto} 
+                    />
 
                 ))}
                 
