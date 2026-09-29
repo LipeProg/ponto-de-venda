@@ -54,8 +54,8 @@ function NovoProduto() {
    
   salvarProdutos(novosProdutos);
 
-  console.log(produtosSalvos);
-  console.log(novoProduto);
+  console.log("Produto salvo com sucesso:", novoProduto);
+  alert("Produto salvo com sucesso!");
 
 }
 

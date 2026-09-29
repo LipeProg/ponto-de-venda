@@ -9,6 +9,7 @@ function Produtos() {
   const [produtos, setProdutos] = useState(carregarProdutos());
   
   const produtosFiltrados = produtos.filter((produto) =>
+    
     produto.nome.toLowerCase().includes(busca.toLowerCase())
   );
 
@@ -20,6 +21,9 @@ function Produtos() {
 
       setProdutos(produtosAtualizados);
       salvarProdutos(produtosAtualizados);
+
+      console.log("Produto excluído com sucesso. ID:", id);
+      alert("Produto excluído com sucesso!");
   }
 
   return (
