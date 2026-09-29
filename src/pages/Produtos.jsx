@@ -1,14 +1,26 @@
 import { useState } from "react";
-import produtos from "../data/produtos.json";
+import { carregarProdutos, salvarProdutos } from "../data/produtoStorage";
 import ProdutoItem from "../components/ProdutoItem";
 import { Link } from "react-router-dom";
 
 function Produtos() {
+  
   const [busca, setBusca] = useState("");
-
+  const [produtos, setProdutos] = useState(carregarProdutos());
+  
   const produtosFiltrados = produtos.filter((produto) =>
     produto.nome.toLowerCase().includes(busca.toLowerCase())
   );
+
+  function excluirProduto(id) {
+
+    const produtosAtualizados = produtos.filter(
+        (produto) => produto.id !== id
+      );
+
+      setProdutos(produtosAtualizados);
+      salvarProdutos(produtosAtualizados);
+  }
 
   return (
     <div>
@@ -32,6 +44,7 @@ function Produtos() {
             <ProdutoItem
               key={produto.id}
               produto={produto}
+              excluirProduto={excluirProduto}
             />
           ))}
         </ul>

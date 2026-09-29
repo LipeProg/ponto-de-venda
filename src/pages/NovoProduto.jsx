@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { carregarProdutos, salvarProdutos } from "../data/produtoStorage";
 
 function NovoProduto() {
   const [nome, setNome] = useState("");
@@ -9,6 +10,7 @@ function NovoProduto() {
 
   function enviar(acao) {
     acao.preventDefault();
+
 
   if (nome.trim() === "") {
     setErro("O nome do produto é obrigatório.");
@@ -32,12 +34,29 @@ function NovoProduto() {
 
   setErro("");
 
-  console.log({
+  const novoProduto = {
+    id: Date.now(),
     nome,
     codigo,
-    preco,
-    estoque,
-  });
+    preco: Number(preco),
+    estoque: Number(estoque),
+    ativo: true,
+  };
+  
+
+  const produtosSalvos = carregarProdutos();
+
+
+  const novosProdutos = [
+    ...produtosSalvos,
+    novoProduto
+  ];
+   
+  salvarProdutos(novosProdutos);
+
+  console.log(produtosSalvos);
+  console.log(novoProduto);
+
 }
 
   return (
