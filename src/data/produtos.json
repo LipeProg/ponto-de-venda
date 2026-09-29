@@ -12,31 +12,391 @@
     "codigo": "PROD002",
     "nome": "Açúcar 1kg",
     "preco": 6.5,
-    "estoque": 12,
+    "estoque": 18,
     "ativo": true
   },
   {
     "id": 3,
     "codigo": "PROD003",
-    "nome": "Leite 1L",
+    "nome": "Leite Integral 1L",
     "preco": 5.99,
-    "estoque": 4,
+    "estoque": 20,
     "ativo": true
   },
   {
     "id": 4,
     "codigo": "PROD004",
-    "nome": "Arroz 1kg",
+    "nome": "Arroz Branco 1kg",
     "preco": 7.8,
-    "estoque": 0,
+    "estoque": 15,
     "ativo": true
   },
   {
     "id": 5,
     "codigo": "PROD005",
-    "nome": "Biscoito",
-    "preco": 4.25,
+    "nome": "Feijão Carioca 1kg",
+    "preco": 8.49,
+    "estoque": 14,
+    "ativo": true
+  },
+  {
+    "id": 6,
+    "codigo": "PROD006",
+    "nome": "Macarrão Espaguete 500g",
+    "preco": 4.99,
     "estoque": 30,
+    "ativo": true
+  },
+  {
+    "id": 7,
+    "codigo": "PROD007",
+    "nome": "Óleo de Soja 900ml",
+    "preco": 8.99,
+    "estoque": 16,
+    "ativo": true
+  },
+  {
+    "id": 8,
+    "codigo": "PROD008",
+    "nome": "Sal Refinado 1kg",
+    "preco": 2.79,
+    "estoque": 22,
+    "ativo": true
+  },
+  {
+    "id": 9,
+    "codigo": "PROD009",
+    "nome": "Farinha de Trigo 1kg",
+    "preco": 5.49,
+    "estoque": 17,
+    "ativo": true
+  },
+  {
+    "id": 10,
+    "codigo": "PROD010",
+    "nome": "Farinha de Mandioca 1kg",
+    "preco": 6.99,
+    "estoque": 12,
+    "ativo": true
+  },
+  {
+    "id": 11,
+    "codigo": "PROD011",
+    "nome": "Flocão de Milho 500g",
+    "preco": 2.99,
+    "estoque": 28,
+    "ativo": true
+  },
+  {
+    "id": 12,
+    "codigo": "PROD012",
+    "nome": "Biscoito Cream Cracker 350g",
+    "preco": 4.5,
+    "estoque": 24,
+    "ativo": true
+  },
+  {
+    "id": 13,
+    "codigo": "PROD013",
+    "nome": "Biscoito Recheado Chocolate 120g",
+    "preco": 2.99,
+    "estoque": 35,
+    "ativo": true
+  },
+  {
+    "id": 14,
+    "codigo": "PROD014",
+    "nome": "Pão de Forma 500g",
+    "preco": 8.99,
+    "estoque": 10,
+    "ativo": true
+  },
+  {
+    "id": 15,
+    "codigo": "PROD015",
+    "nome": "Margarina 500g",
+    "preco": 7.49,
+    "estoque": 13,
+    "ativo": true
+  },
+  {
+    "id": 16,
+    "codigo": "PROD016",
+    "nome": "Manteiga 200g",
+    "preco": 11.9,
+    "estoque": 8,
+    "ativo": true
+  },
+  {
+    "id": 17,
+    "codigo": "PROD017",
+    "nome": "Leite em Pó 400g",
+    "preco": 16.99,
+    "estoque": 11,
+    "ativo": true
+  },
+  {
+    "id": 18,
+    "codigo": "PROD018",
+    "nome": "Achocolatado em Pó 400g",
+    "preco": 9.99,
+    "estoque": 18,
+    "ativo": true
+  },
+  {
+    "id": 19,
+    "codigo": "PROD019",
+    "nome": "Cereal Matinal 200g",
+    "preco": 10.49,
+    "estoque": 7,
+    "ativo": true
+  },
+  {
+    "id": 20,
+    "codigo": "PROD020",
+    "nome": "Refrigerante Cola 2L",
+    "preco": 9.99,
+    "estoque": 26,
+    "ativo": true
+  },
+  {
+    "id": 21,
+    "codigo": "PROD021",
+    "nome": "Refrigerante Guaraná 2L",
+    "preco": 8.99,
+    "estoque": 22,
+    "ativo": true
+  },
+  {
+    "id": 22,
+    "codigo": "PROD022",
+    "nome": "Suco de Uva 1L",
+    "preco": 9.5,
+    "estoque": 14,
+    "ativo": true
+  },
+  {
+    "id": 23,
+    "codigo": "PROD023",
+    "nome": "Água Mineral 500ml",
+    "preco": 2.5,
+    "estoque": 40,
+    "ativo": true
+  },
+  {
+    "id": 24,
+    "codigo": "PROD024",
+    "nome": "Água Mineral 1,5L",
+    "preco": 4.5,
+    "estoque": 30,
+    "ativo": true
+  },
+  {
+    "id": 25,
+    "codigo": "PROD025",
+    "nome": "Sabão em Pó 800g",
+    "preco": 11.99,
+    "estoque": 15,
+    "ativo": true
+  },
+  {
+    "id": 26,
+    "codigo": "PROD026",
+    "nome": "Detergente 500ml",
+    "preco": 2.79,
+    "estoque": 32,
+    "ativo": true
+  },
+  {
+    "id": 27,
+    "codigo": "PROD027",
+    "nome": "Água Sanitária 1L",
+    "preco": 3.99,
+    "estoque": 20,
+    "ativo": true
+  },
+  {
+    "id": 28,
+    "codigo": "PROD028",
+    "nome": "Desinfetante 2L",
+    "preco": 7.99,
+    "estoque": 12,
+    "ativo": true
+  },
+  {
+    "id": 29,
+    "codigo": "PROD029",
+    "nome": "Esponja de Cozinha",
+    "preco": 1.99,
+    "estoque": 36,
+    "ativo": true
+  },
+  {
+    "id": 30,
+    "codigo": "PROD030",
+    "nome": "Papel Higiênico 4 Rolos",
+    "preco": 7.49,
+    "estoque": 18,
+    "ativo": true
+  },
+  {
+    "id": 31,
+    "codigo": "PROD031",
+    "nome": "Sabonete 90g",
+    "preco": 2.99,
+    "estoque": 28,
+    "ativo": true
+  },
+  {
+    "id": 32,
+    "codigo": "PROD032",
+    "nome": "Shampoo 350ml",
+    "preco": 12.99,
+    "estoque": 10,
+    "ativo": true
+  },
+  {
+    "id": 33,
+    "codigo": "PROD033",
+    "nome": "Condicionador 350ml",
+    "preco": 13.49,
+    "estoque": 9,
+    "ativo": true
+  },
+  {
+    "id": 34,
+    "codigo": "PROD034",
+    "nome": "Creme Dental 90g",
+    "preco": 4.99,
+    "estoque": 21,
+    "ativo": true
+  },
+  {
+    "id": 35,
+    "codigo": "PROD035",
+    "nome": "Escova Dental",
+    "preco": 5.99,
+    "estoque": 19,
+    "ativo": true
+  },
+  {
+    "id": 36,
+    "codigo": "PROD036",
+    "nome": "Desodorante Aerosol 150ml",
+    "preco": 14.99,
+    "estoque": 11,
+    "ativo": true
+  },
+  {
+    "id": 37,
+    "codigo": "PROD037",
+    "nome": "Ovos Brancos Dúzia",
+    "preco": 12.9,
+    "estoque": 12,
+    "ativo": true
+  },
+  {
+    "id": 38,
+    "codigo": "PROD038",
+    "nome": "Queijo Mussarela 200g",
+    "preco": 10.99,
+    "estoque": 8,
+    "ativo": true
+  },
+  {
+    "id": 39,
+    "codigo": "PROD039",
+    "nome": "Presunto 200g",
+    "preco": 8.99,
+    "estoque": 9,
+    "ativo": true
+  },
+  {
+    "id": 40,
+    "codigo": "PROD040",
+    "nome": "Salsicha 500g",
+    "preco": 7.99,
+    "estoque": 13,
+    "ativo": true
+  },
+  {
+    "id": 41,
+    "codigo": "PROD041",
+    "nome": "Milho Verde Lata 170g",
+    "preco": 4.49,
+    "estoque": 16,
+    "ativo": true
+  },
+  {
+    "id": 42,
+    "codigo": "PROD042",
+    "nome": "Ervilha Lata 170g",
+    "preco": 4.29,
+    "estoque": 14,
+    "ativo": true
+  },
+  {
+    "id": 43,
+    "codigo": "PROD043",
+    "nome": "Molho de Tomate 300g",
+    "preco": 2.99,
+    "estoque": 25,
+    "ativo": true
+  },
+  {
+    "id": 44,
+    "codigo": "PROD044",
+    "nome": "Maionese 500g",
+    "preco": 8.49,
+    "estoque": 12,
+    "ativo": true
+  },
+  {
+    "id": 45,
+    "codigo": "PROD045",
+    "nome": "Ketchup 400g",
+    "preco": 6.99,
+    "estoque": 15,
+    "ativo": true
+  },
+  {
+    "id": 46,
+    "codigo": "PROD046",
+    "nome": "Mostarda 200g",
+    "preco": 4.99,
+    "estoque": 10,
+    "ativo": true
+  },
+  {
+    "id": 47,
+    "codigo": "PROD047",
+    "nome": "Sardinha em Lata 125g",
+    "preco": 5.99,
+    "estoque": 17,
+    "ativo": true
+  },
+  {
+    "id": 48,
+    "codigo": "PROD048",
+    "nome": "Atum em Lata 170g",
+    "preco": 9.99,
+    "estoque": 10,
+    "ativo": true
+  },
+  {
+    "id": 49,
+    "codigo": "PROD049",
+    "nome": "Chocolate ao Leite 90g",
+    "preco": 6.49,
+    "estoque": 20,
+    "ativo": true
+  },
+  {
+    "id": 50,
+    "codigo": "PROD050",
+    "nome": "Bombom Caixa 250g",
+    "preco": 12.99,
+    "estoque": 9,
     "ativo": true
   }
 ]

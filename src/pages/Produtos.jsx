@@ -7,13 +7,15 @@ function Produtos() {
   
   const [busca, setBusca] = useState("");
   const [produtos, setProdutos] = useState(carregarProdutos());
-  
+  const [mensagem, setMensagem] = useState("");
   const produtosFiltrados = produtos.filter((produto) =>
     
     produto.nome.toLowerCase().includes(busca.toLowerCase())
   );
 
   function excluirProduto(id) {
+
+
 
     const produtosAtualizados = produtos.filter(
         (produto) => produto.id !== id
@@ -23,12 +25,15 @@ function Produtos() {
       salvarProdutos(produtosAtualizados);
 
       console.log("Produto excluído com sucesso. ID:", id);
-      alert("Produto excluído com sucesso!");
+      setMensagem("Produto excluído com sucesso!");
   }
 
   return (
     <div>
       <h1>Produtos</h1>
+
+      {mensagem && <p>{mensagem}</p>}
+
       <Link to="/produtos/novo-produto">
           Cadastrar produto
       </Link>

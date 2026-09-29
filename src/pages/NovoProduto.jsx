@@ -7,9 +7,13 @@ function NovoProduto() {
   const [preco, setPreco] = useState("");
   const [estoque, setEstoque] = useState("");
   const [erro, setErro] = useState("");
-
+  const [mensagem, setMensagem] = useState("");
+  
+  
+  
   function enviar(acao) {
     acao.preventDefault();
+ 
 
 
   if (nome.trim() === "") {
@@ -60,7 +64,8 @@ function NovoProduto() {
   salvarProdutos(novosProdutos);
 
   console.log("Produto salvo com sucesso:", novoProduto);
-  alert("Produto salvo com sucesso!");
+
+  setMensagem("Produto salvo com sucesso!");
 
 }
 
@@ -69,6 +74,7 @@ function NovoProduto() {
       <h1>Novo Produto</h1>
 
       {erro && <p>{erro}</p>}
+      {mensagem && <p>{mensagem}</p>}
 
       <form onSubmit={enviar}>
         <div>
