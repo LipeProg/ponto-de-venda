@@ -4,23 +4,14 @@ import Estoque from "./pages/Estoque";
 import Produtos from "./pages/Produtos";
 import Vendas from "./pages/Vendas";
 import NovoProduto from "./pages/NovoProduto";
+import Header from "./components/layout/Header";
+import Footer from "./components/layout/Footer";
 
 function App() {
   return (
     <BrowserRouter>
 
-    <header>
-
-      <h1>Ponto de Venda</h1>
-
-      <nav>
-        <Link to="/">Dashboard</Link>
-        <Link to="/estoque">Estoque</Link>
-        <Link to="/produtos">Produtos</Link>
-        <Link to="/vendas">Vendas</Link>
-      </nav>
-
-    </header>
+    <Header />
 
     <main>
 
@@ -35,6 +26,9 @@ function App() {
 
 
     </main>    
+
+    <Footer />
+
     </BrowserRouter>
 
   );

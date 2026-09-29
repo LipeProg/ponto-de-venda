@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { carregarProdutos, salvarProdutos } from "../data/produtoStorage";
-import ProdutoItem from "../components/ProdutoItem";
+import ProdutoItem from "../components/shared/ProdutoItem";
 import { Link } from "react-router-dom";
 
 function Produtos() {
