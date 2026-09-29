@@ -1,11 +1,12 @@
 import { useState } from "react";
 import { carregarProdutos } from "../data/produtoStorage";
+import "../styles/layout.css";
 
 function Estoque() {
   const [produtos] = useState(carregarProdutos());
 
   return (
-    <div>
+    <div className="page-header">
       <h1>Estoque</h1>
 
       <p>Acompanhe a quantidade disponível de cada produto.</p>

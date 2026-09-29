@@ -6,6 +6,7 @@ import Vendas from "./pages/Vendas";
 import NovoProduto from "./pages/NovoProduto";
 import Header from "./components/layout/Header";
 import Footer from "./components/layout/Footer";
+import "./styles/layout.css";
 
 function App() {
   return (

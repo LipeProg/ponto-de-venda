@@ -29,8 +29,13 @@ function Produtos() {
   }
 
   return (
-    <div>
-      <h1>Produtos</h1>
+    <div >
+
+
+        <div className="page-header">
+          <h1>Produtos</h1>
+          <p>Gerencie os produtos cadastrados.</p>
+        </div>
 
       {mensagem && <p>{mensagem}</p>}
 

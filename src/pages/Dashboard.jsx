@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { carregarProdutos } from "../data/produtoStorage";
+import "../styles/layout.css";
 
 function Dashboard() {
   const [produtos] = useState(carregarProdutos());
@@ -20,7 +21,7 @@ function Dashboard() {
   ).length;
 
   return (
-    <div>
+    <div className="page-header">
       <h1>Minerva PDV</h1>
 
       <p>
@@ -28,27 +29,28 @@ function Dashboard() {
         estoque e vendas.
       </p>
 
-      <section>
-        <div>
-          <h2>Total de produtos</h2>
-          <p>{totalProdutos}</p>
-        </div>
+      <section className="dashboard-grid">
+          <div className="dashboard-card">
+            <span>Total de produtos</span>
+            <strong>{totalProdutos}</strong>
+          </div>
 
-        <div>
-          <h2>Itens em estoque</h2>
-          <p>{totalEstoque}</p>
-        </div>
+          <div className="dashboard-card">
+            <span>Itens em estoque</span>
+            <strong>{totalEstoque}</strong>
+          </div>
 
-        <div>
-          <h2>Estoque baixo</h2>
-          <p>{produtosEstoqueBaixo}</p>
-        </div>
+          <div className="dashboard-card">
+            <span>Estoque baixo</span>
+            <strong>{produtosEstoqueBaixo}</strong>
+          </div>
 
-        <div>
-          <h2>Sem estoque</h2>
-          <p>{produtosSemEstoque}</p>
-        </div>
-      </section>
+          <div className="dashboard-card">
+            <span>Sem estoque</span>
+            <strong>{produtosSemEstoque}</strong>
+          </div>
+
+        </section>
     </div>
   );
 }

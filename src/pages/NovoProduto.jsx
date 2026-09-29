@@ -70,7 +70,7 @@ function NovoProduto() {
 }
 
   return (
-    <div>
+    <div className="page-header">
       <h1>Novo Produto</h1>
 
       {erro && <p>{erro}</p>}
@@ -99,6 +99,7 @@ function NovoProduto() {
           <label>Preço</label>
           <input
             type="number"
+            step="0.01"
             value={preco}
             onChange={(event) => setPreco(event.target.value)}
           />
