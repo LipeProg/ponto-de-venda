@@ -27,6 +27,11 @@ function NovoProduto() {
     return;
   }
 
+  if (estoque === "") {
+    setErro("O estoque do produto é obrigatório.");
+    return;
+  }
+
   if (Number(estoque) < 0) {
     setErro("O estoque não pode ser negativo.");
     return;
