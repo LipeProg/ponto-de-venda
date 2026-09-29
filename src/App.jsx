@@ -20,7 +20,6 @@ function App() {
       <Route path="/" element={<Dashboard />} />
       <Route path="/estoque" element={<Estoque />} />
       <Route path="/produtos" element={<Produtos />} />
-      <Route path="/vendas" element={<Vendas />} />
       <Route path="/produtos/novo-produto" element={<NovoProduto />} />
     </Routes>
 
